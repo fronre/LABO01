@@ -12,3 +12,6 @@ def test_factorial_two_is_two():
 
 def test_factorial_three_is_six():
     assert factorial(3) == 6
+
+def test_factorial_four_is_twentyfour():
+    assert factorial(4) == 24
