@@ -9,6 +9,8 @@ from factorial import factorial
         (2, 2),
         (3, 6),
         (4, 24),
+       (  5, 120)
+
     ]
 )
 def test_factorial_values(n, expected):
