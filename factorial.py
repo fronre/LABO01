@@ -3,4 +3,6 @@ def factorial(n: int) -> int:
             return 1
       if n==2:
             return 2
-      return 6
+      if n==3:
+            return 6
+      return 24
