@@ -22,5 +22,5 @@ from factorial import factorial
     ]
 )
 def test_factorial_values(n, expected):
-    assert factorial(n) == expected
+    assert factorial(n) == expected  
 
