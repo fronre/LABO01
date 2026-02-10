@@ -1,17 +1,15 @@
+import pytest
 from factorial import factorial
-def test_factorial_is_callable():
-      factorial()
-def test_factorial_zero_is_one():
-    assert factorial(0) == 1
 
-def test_factorial_one_is_one():
-    assert factorial(1) == 1
-
-def test_factorial_two_is_two():
-    assert factorial(2) == 2
-
-def test_factorial_three_is_six():
-    assert factorial(3) == 6
-
-def test_factorial_four_is_twentyfour():
-    assert factorial(4) == 24
+@pytest.mark.parametrize(
+    "n, expected",
+    [
+        (0, 1),
+        (1, 1),
+        (2, 2),
+        (3, 6),
+        (4, 24),
+    ]
+)
+def test_factorial_values(n, expected):
+    assert factorial(n) == expected
