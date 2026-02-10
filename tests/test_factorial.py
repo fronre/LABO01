@@ -9,3 +9,6 @@ def test_factorial_one_is_one():
 
 def test_factorial_two_is_two():
     assert factorial(2) == 2
+
+def test_factorial_three_is_six():
+    assert factorial(3) == 6
