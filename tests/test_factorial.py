@@ -22,5 +22,9 @@ from factorial import factorial
     ]
 )
 def test_factorial_values(n, expected):
-    assert factorial(n) == expected  
+    assert factorial(n) == expected
+
+def test_factorial_negative_number():
+    with pytest.raises(ValueError):
+        factorial(-1)
 
