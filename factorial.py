@@ -1,2 +1,2 @@
 def factorial(n: int) -> int:
-    pass
+    return 1
